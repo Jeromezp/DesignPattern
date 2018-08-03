@@ -9,6 +9,9 @@
 namespace DesignPattern\Strategy;
 
 
-class CashNormal {
+class CashNormal extends CashStrategy {
 
+    public function acceptCash($money) {
+        return $money;
+    }
 }

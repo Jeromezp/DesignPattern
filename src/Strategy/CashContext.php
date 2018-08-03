@@ -26,7 +26,7 @@ class CashContext {
                 $this->cash_strategy = new CashNormal();
                 break;
             case self::CASH_TYPE_RETURN:
-                $this->cash_strategy = new CashReturn();
+                $this->cash_strategy = new CashReturn(200, 200);
                 break;
             case self::CASH_TYPE_REBATE:
                 $this->cash_strategy = new CashRebate(0.8);
